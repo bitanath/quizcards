@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+jsconfig.json
+.jshintrc
+.jsbeautifyrc
+*.log*
+nodemon.json

@@ -1,0 +1,38 @@
+<div id="page1" class="page">
+    <div class="cardcontainer list">
+        <ul class="cardlist">
+            {{#each chroniclesquestions}} 
+                {{#if this.image}} 
+                {{> imagecard this}} 
+                {{else}} 
+                {{> textcard this}} 
+                {{/if}} 
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<div id="page2" class="page">
+    <div class="cardcontainer list">
+        <ul class="cardlist">
+            {{#each ibqquestions}} 
+                {{#if this.image}} 
+                {{> imagecard this}} 
+                {{else}} 
+                {{> textcard this}} 
+                {{/if}} 
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="fa fa-3x fa-navicon"></i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red" onclick="stackDeck(true)"><i class="fa fa-refresh"></i></a></li>
+        <li><a class="btn-floating yellow darken-1" onclick="reloadPage()"><i class="fa fa-random"></i></a></li>        
+    </ul>
+</div>
+<div class="touchScreen">
+    <!--catch all touch screen events here -->
+</div>
