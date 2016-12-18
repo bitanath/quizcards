@@ -1,0 +1,33 @@
+{
+  "name": "quizmaster",
+  "version": "1.0.0",
+  "description": "A quiz flashcards app\r =======================",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jsonfile": "^2.4.0",
+    "mongoose": "^4.7.3",
+    "mongoose-query-random": "^1.0.1",
+    "q": "^1.4.1",
+    "request": "^2.79.0",
+    "underscore": "^1.8.3",
+    "xmljson": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitanath:Bitanath_0@github.com/bitanath/quizcards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitanath/quizcards/issues"
+  },
+  "homepage": "https://github.com/bitanath/quizcards#readme"
+}
