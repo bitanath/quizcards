@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    Questions.find().random(100, true, function(err, questions) {
+    Questions.find().random(30, true, function(err, questions) {
         if(err)
         res.status(500).send('DB Error!');
         else{
