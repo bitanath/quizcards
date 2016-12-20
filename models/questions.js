@@ -8,7 +8,9 @@ var questionSchema = new Schema({
     question: String,
     answer: String,     
     image: String, 
-    source: String   
+    source: String,
+    bookmark: {type:Boolean,default:false},   
+    flag: {type:Boolean,default:false}   
 }, {
     timestamps: true
 });

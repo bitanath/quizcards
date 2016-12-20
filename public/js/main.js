@@ -156,3 +156,46 @@ function generateCards(categories,data,callback){
 function reloadPage(){
     window.location.reload();
 }
+
+$('.flag').click(function(i,el){    
+    var id = $(this).parent().attr('data-id');
+    var $a = $(this);
+    console.log('Flag clicked',id);
+    $.post('/flagquestion/'+id,function(data){
+        $a.removeClass('flag').addClass('unflag');
+        $a.html('<i class="fa fa-flag"></i> Unflag');
+    });
+});
+
+$('.bookmark').click(function(i,el){    
+    var id = $(this).parent().attr('data-id').toString();
+    var $a = $(this);
+    console.log('Bookmark clicked',id);
+    var url = '/bookmarkquestion/'+id;
+    console.log('Sending post request to ',url);
+    $.post(url,function(data){
+        $a.removeClass('bookmark').addClass('unbookmark');
+        $a.html('<i class="fa fa-bookmark"></i> Unbookmark');
+    });
+});
+
+$('.unflag').click(function(i,el){
+    var id = $(this).parent().attr('data-id');
+    var $a = $(this);
+    console.log('UnFlag clicked',id);
+    $.post('/unflagquestion/'+id,function(data){
+        $a.removeClass('unflag').addClass('flag');
+        $a.html('<i class="fa fa-flag"></i> Flag');
+    });
+});
+
+$('.unbookmark').click(function(i,el){
+    var id = $(this).parent().attr('data-id');
+    var $a = $(this);
+    console.log('UnBookmark clicked',id);
+    $.post('/unbookmarkquestion/'+id,function(data){
+        $a.removeClass('unbookmark').addClass('bookmark');
+        $a.html('<i class="fa fa-bookmark"></i> Bookmark');
+    });
+});
+

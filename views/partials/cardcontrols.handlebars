@@ -1,0 +1,19 @@
+<div class="card-action" data-id="{{this.id}}">
+{{#if this.bookmark}} 
+            {{#if this.flag}}            
+                <a href="#" class="unflag"><i class="fa fa-flag"></i> Unflag </a>
+                <a href="#" class="unbookmark"><i class="fa fa-bookmark"></i> Unbookmark </a>
+            {{else}}            
+                <a href="#" class="flag"><i class="fa fa-flag"></i> Flag </a>
+                <a href="#" class="unbookmark"><i class="fa fa-bookmark"></i> Unbookmark </a>            
+            {{/if}} 
+        {{else}} 
+            {{#if this.flag}}
+                <a href="#" class="unflag"><i class="fa fa-flag"></i> Unflag </a>
+                <a href="#" class="bookmark"><i class="fa fa-bookmark"></i> Bookmark </a>
+            {{else}}
+                <a href="#" class="flag"><i class="fa fa-flag"></i> Flag </a>
+                <a href="#" class="bookmark"><i class="fa fa-bookmark"></i> Bookmark </a>
+            {{/if}} 
+{{/if}}
+</div>

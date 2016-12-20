@@ -1,5 +1,5 @@
 <li class="deck">
-    <div class="card">
+    <div class="card" data-id="{{this._id}}">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="{{this.image}}">
         </div>
@@ -11,5 +11,6 @@
             <span class="card-title grey-text text-darken-4">Answer<i class="fa fa-close right"></i></span>
             <p>{{this.answer}}</p>
         </div>
+        {{>cardcontrols this}}
     </div>
 </li>
