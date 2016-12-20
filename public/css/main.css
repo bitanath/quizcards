@@ -46,8 +46,8 @@ body{
     transform: translate3d(2px, 2px, 2px) translate(0px, 0px) rotate(0deg);
 }
 .card-image img{    
-    height:70%;    
-    max-height:500px;
+    height:60%;    
+    max-height:300px;
 }
 .leftOut{
     animation: nope 0.7s ease-out;
@@ -80,6 +80,6 @@ body{
     border: none;
 }
 .card{
-    min-height:400px !important;
-    min-height:400px !important;
+    max-height:420px !important;
+    min-height:420px !important;
 }
